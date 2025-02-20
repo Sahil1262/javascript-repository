@@ -35,3 +35,30 @@ console.log(typeof bigNumber)
 console.log(typeof scoreval)
 
 
+//++++++++++++++++++++++++++++++++++++++
+
+// memory -- heap or stack
+   // stack=provide copy of a variable
+   // heap= provide reference means original 
+/* 
+primitive datatype use stack memory
+non-primitive datatype use heap memory
+*/
+
+let myname = "sahil goyal"
+let anothername = myname;
+anothername= "raj"
+
+console.log(myname)
+console.log(anothername)
+
+let userone= {
+    email: "user@gmail.com",
+    upiid: "user@ybl"
+}
+
+let usertwo= userone
+usertwo.email="sahil@gmail.com"
+
+console.log(userone.email)
+console.log(usertwo.email)
